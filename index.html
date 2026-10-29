@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lirik Pixel</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#000;--fg:#eee;--accent:#e8d44d}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:Montserrat,system-ui,sans-serif;overflow:hidden}
+canvas{display:block;width:100%;height:100%}
+#ui{position:fixed;inset:0;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;background:rgba(0,0,0,.82);text-align:center;padding:24px;box-sizing:border-box}
+#ui button{font:inherit;font-weight:700;font-size:18px;padding:12px 32px;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+#ui button:focus-visible,#ui input:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#ui small{opacity:.65;max-width:34ch;line-height:1.5}
+#ui input{max-width:100%}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<script src="album.js"></script>
+<script src="hands.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
